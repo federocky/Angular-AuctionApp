@@ -1,4 +1,5 @@
-[{
+{
+  "items": [{
   "id": 0,
   "title": "Vintage Bluetooth Radio",
   "description": "Isn’t it cool when things look old, but their not. Looks Old But Not makes awesome vintage goods that are super smart. This ol’ radio just got an upgrade. Connect to it with an app and jam out to some top forty.",
@@ -189,4 +190,4 @@
   "storeDescription": "Stella sells awesome stuff at lovely prices. made by hand and sometimes by machine, but always with love and care. Custom orders are available upon request if you need something extra special.",
   "featured": true
 }
-]
+]}

@@ -1,1 +1,8 @@
-<p>main-destacados works!</p>
+<h1>Productos Destacados</h1>
+
+<!--muestro product list a la que le mando los productos y recibo
+el producto seleccionado en caso que haya alguno.-->
+<app-product-list [products]="featuredProductList" (selectedProduct)="setSelectedProduct($event)"></app-product-list>
+
+<!--si se selecciono un producto lo mando a details-->
+<app-product-details [selectedProduct]="selectedProduct"></app-product-details>

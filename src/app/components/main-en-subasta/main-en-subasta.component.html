@@ -1,1 +1,26 @@
-<p>main-en-subasta works!</p>
+<h1>Productos En subasta</h1>
+
+<!--mostramos nav a la que le pasamos las tiendas y nos llega la tienda seleccionada-->
+<app-store-auction-shops [tiendas]="listaTiendas" (tiendaSeleccionada)="setSelectedShop($event)"></app-store-auction-shops>
+
+<div class="row">
+    <div class="col-8">
+        <!--lista productos, le pasamos los productos y un filtro en caso que hubiea alguno.
+        nos llega el producto seleccionado.-->
+        <app-product-list 
+            [products]="subastaProductList" 
+            (selectedProduct)="setSelectedProduct($event)" 
+            [filtro]="selectedShop">
+        </app-product-list>
+    </div>
+
+    <div class="col-4">
+        <app-store-info [selectedShop]="objectSelectedShop"></app-store-info>
+    </div>
+</div>
+
+
+
+
+<app-product-details [selectedProduct]="selectedProduct"></app-product-details>
+

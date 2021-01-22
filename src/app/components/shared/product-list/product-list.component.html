@@ -1,1 +1,5 @@
-<p>product-list works!</p>
+<div class="card-group">
+
+<app-product-card *ngFor="let product of products | filterByShop:filtro" [product]="product" (selectedProduct)="selectedProduct.emit($event)"></app-product-card>
+
+</div>

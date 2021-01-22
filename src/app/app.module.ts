@@ -13,6 +13,10 @@ import { StoreAuctionShopsComponent } from './components/auction/store-auction-s
 import { StoreInfoComponent } from './components/auction/store-info/store-info.component';
 import { FilterByShopPipe } from './pipes/filter-by-shop.pipe';
 
+import { HttpClientModule } from '@angular/common/http';
+
+import { app_routing } from './app.routes';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +32,9 @@ import { FilterByShopPipe } from './pipes/filter-by-shop.pipe';
     FilterByShopPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    app_routing
   ],
   providers: [],
   bootstrap: [AppComponent]

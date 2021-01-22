@@ -1,4 +1,5 @@
-[
+{
+  "featured": [
   {
     "id": 16,
     "title": "Green comfort chair",
@@ -69,4 +70,4 @@
     "price": "$300",
     "category": "Travel"
   }
-]
+]}

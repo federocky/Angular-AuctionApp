@@ -1,1 +1,20 @@
-<p>product-details works!</p>
+<!--si hay un producto seleccionado muestro.-->
+<div class="card mb-3" style="max-width: 540px;" *ngIf="selectedProduct">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img [src]="selectedProduct.imageUrl" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ selectedProduct.title }}</h5>
+
+
+          <!--Si viene de featured muestro la quote y si viene de subasta muestro la descripcion-->
+          <p class="card-text" *ngIf="selectedProduct.quote">{{ selectedProduct.quote }}</p>
+          <p class="card-text" *ngIf="selectedProduct.description">{{ selectedProduct.description }}</p>
+
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>

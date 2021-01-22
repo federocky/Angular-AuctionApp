@@ -1,1 +1,9 @@
-<p>store-info works!</p>
+<!--si existe alguna tienda seleccionada muestro-->
+<div class="card" style="width: 18rem;" *ngIf="selectedShop">
+    <img [src]="selectedShop.storeAvatar" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ selectedShop.storeName }}</h5>
+      <p class="card-text">{{ selectedShop.storeDescription }}</p>
+      <a href="#" class="btn btn-primary">Ver tienda</a>
+    </div>
+  </div>

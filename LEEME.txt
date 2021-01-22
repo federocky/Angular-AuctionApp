@@ -1,0 +1,6 @@
+He simulado una api para la obtencion de datos utilizando el comando:
+
+json-server --watch items.json
+json-server --watch featured.json --port 3001
+
+desde data asi que para que funcione hay que tirar estos dos comandos antes.

@@ -1,1 +1,7 @@
-<p>product-card works!</p>
+<div class="card">
+    <img [src]="product.imageUrl" class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">{{ product.title }}</h5>
+    <h6>{{ product.price }}</h6>
+    <button class="btn button-outline btn-primary" (click)="selectedProduct.emit(product.id)">Detalles</button>
+</div>
